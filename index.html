@@ -14,7 +14,10 @@
         <title>Migi Gluttony</title>
     </head>
     <body>
-        
+        <button class="theme-toggle">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </button>
         <div class="frame">
             <div class="one">
                 <img src="/assets/images/pfp.jpeg" alt="" />
@@ -76,5 +79,20 @@
                 </a>
             </div>
         </div>
+        <script>
+    const themeToggle = document.querySelector('.theme-toggle');
+    const storedTheme = localStorage.getItem('theme');
+
+    if (storedTheme) {
+        document.body.setAttribute('data-theme', storedTheme);
+    }
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+</script>
     </body>
 </html>
