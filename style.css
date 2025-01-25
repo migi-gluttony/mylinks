@@ -5,6 +5,7 @@
     --link-bg: #f0f0f0;
     --border-color: #dcdcdc;
     --icon-invert: 0;
+    --dots-color:rgba(0, 0, 0, 0.2);
 }
 
 /* Dark Theme Variables */
@@ -14,9 +15,17 @@
     --link-bg: #1e1e1e;
     --border-color: #333333;
     --icon-invert: 1;
+    --dots-color:rgba(255, 255, 255, 0.2);
+
 }
 
 /* General Body Styles */
+body {
+    background-color: #f9f9f9;
+    background-image: radial-gradient(circle, var(--dots-color) 5%, transparent 10%);
+    background-size: 13px 13px; /* Plus dense et petits */
+  }
+  
 body {
     margin: 0;
     padding: 0;
