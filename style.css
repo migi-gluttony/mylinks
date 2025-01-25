@@ -20,20 +20,17 @@
 }
 
 /* General Body Styles */
-body {
-    background-color: #f9f9f9;
-    background-image: radial-gradient(circle, var(--dots-color) 5%, transparent 10%);
-    background-size: 13px 13px; /* Plus dense et petits */
-  }
-  
+/* Combined body styles */
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color); /* Uses theme variable */
+    background-image: radial-gradient(circle, var(--dots-color) 5%, transparent 10%); /* Dotted background */
+    background-size: 13px 13px; /* Controls dot spacing */
     color: var(--text-color);
     font-family: 'Arial', sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
+  }
 
 /* Frame Styling */
 .frame {
