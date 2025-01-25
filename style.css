@@ -1,0 +1,113 @@
+/* General Reset */
+
+body, html {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Frame Styling */
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    padding: 20px;
+}
+
+/* Profile Section */
+.one {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.one img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.one .name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Links Section */
+.two {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.two a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    border: 2px solid #e6e6e6;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.two a:hover {
+    background-color: #f1f1f1;
+    border-color: #ccc;
+    transform: translateY(-2px);
+}
+
+.two img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Social Icons Section */
+.three {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.three a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.three a img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .two a {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .one img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .three a img {
+        width: 32px;
+        height: 32px;
+    }
+}
