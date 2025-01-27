@@ -164,7 +164,8 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .two {padding: 30px;}
+    .two {padding: 30px;
+    column-gap: 10px;}
     .two a {
         font-size: 16px;
         padding: 12px;
